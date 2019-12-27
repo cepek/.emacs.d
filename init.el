@@ -22,8 +22,8 @@
 
 ;; Numbering ...
 
-(global-display-line-numbers-mode t)
-(column-number-mode t)
+(setq global-display-line-numbers-mode t)
+(setq column-number-mode t)
 
 
 ;; Themes ...
