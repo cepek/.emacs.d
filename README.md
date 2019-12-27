@@ -1,4 +1,3 @@
-ELPA
-====
+### Debian
 
-* irony
+* sudo apt install elpa-irony
