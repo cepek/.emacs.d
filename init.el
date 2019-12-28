@@ -37,3 +37,8 @@
 ;(require 'ccls)
 ;(setq ccls-executable "/home/cepek/ccls/Release/ccls")
 
+
+; Probably a wrong solution, but it seems to work
+
+(add-hook 'cmake-mode-hook
+   (lambda () (load "~/.emacs.d/create-basic-cmake-cxx-project.el")))
