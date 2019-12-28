@@ -40,5 +40,6 @@
 
 ; Probably a wrong solution, but it seems to work
 
+(add-to-list 'load-path "~/.emacs.d/local/")
 (add-hook 'cmake-mode-hook
-   (lambda () (load "~/.emacs.d/create-basic-cmake-cxx-project.el")))
+   (lambda () (load "create-basic-cmake-cxx-project.el")))
