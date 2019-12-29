@@ -30,5 +30,17 @@ project(%s LANGUAGES CXX VERSION 1.0)
 set(CMAKE_CXX_STANDARDS 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(%s main.cpp)\n"
-(project-name)(project-name))))
+# optional other source code files
+set(SOURCES )
+
+if (SOURCES)
+  set (LIBRARY %s-lib)
+
+  add_library(${LIBRARY} OBJECT ${SOURCES})
+  add_executable(%s main.cpp $<TARGET_OBJECTS:${LIBRARY}>)
+
+else()
+  add_executable(%s main.cpp)
+
+endif()"
+(project-name)(project-name)(project-name)(project-name))))
