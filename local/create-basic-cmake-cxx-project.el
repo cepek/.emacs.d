@@ -30,6 +30,7 @@ project(%s LANGUAGES CXX VERSION 1.0)
 set(CMAKE_CXX_STANDARDS 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 # optional other source code files
 set(SOURCES )
 
