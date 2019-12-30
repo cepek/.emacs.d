@@ -43,3 +43,7 @@
 (add-to-list 'load-path "~/.emacs.d/local/")
 (add-hook 'cmake-mode-hook
    (lambda () (load "create-basic-cmake-cxx-project.el")))
+(add-hook 'c++-mode-hook (lambda()(load "insert-include-guards.el")))
+
+(setq global-display-line-numbers-mode t)
+(setq global-display-line-numbers-mode t)

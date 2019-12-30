@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2019  Ales Cepek <cepek@gnu.org>
 
-;; Version: 0.90
+;; Version: 1.00
 
 ;; This package is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
