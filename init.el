@@ -31,15 +31,6 @@
 (add-hook 'after-init-hook (lambda () (load-theme 'leuven)))
 
 
-;; C/C++/ObjC language server supporting cross references, hierarchies,
-;; completion and semantic highlighting 
-
-;(require 'ccls)
-;(setq ccls-executable "/home/cepek/ccls/Release/ccls")
-
-
-; Probably a wrong solution, but it seems to work
-
 (add-to-list 'load-path "~/.emacs.d/local/")
 (add-hook 'cmake-mode-hook
    (lambda () (load "create-basic-cmake-cxx-project.el")))
@@ -48,15 +39,4 @@
 (setq global-display-line-numbers-mode t)
 (setq global-display-line-numbers-mode t)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(inhibit-startup-screen t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(setq inhibit-startup-screen t)
