@@ -16,6 +16,11 @@
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 
+;; Using Octave Mode
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode) auto-mode-alist))
+
+
 ;; F1...F12 keys
 (global-set-key '[(f4)] 'ff-find-other-file)  ; switch cpp and header files
 
