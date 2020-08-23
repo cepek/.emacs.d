@@ -1,4 +1,18 @@
-;; headers in c++-mode
+;; To insert tab: CRTL Q Tab
+
+
+;; Use CUA mode, turn off if needed from Options menu.
+
+(cua-mode t)
+
+
+;; Show whitespaces and always whitespace-cleanup before save
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
+(setq-default show-trailing-whitespace t)
+
+
+;; Headers in c++-mode
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
