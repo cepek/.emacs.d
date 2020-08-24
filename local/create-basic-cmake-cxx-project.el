@@ -35,13 +35,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SOURCES )
 
 if (SOURCES)
-  set (LIBRARY %s-lib)
+  set (LIBRARY ${CMAKE_PROJECT_NAME}-lib)
 
   add_library(${LIBRARY} OBJECT ${SOURCES})
-  add_executable(%s main.cpp $<TARGET_OBJECTS:${LIBRARY}>)
+  add_executable(${CMAKE_PROJECT_NAME} main.cpp $<TARGET_OBJECTS:${LIBRARY}>)
 
 else()
-  add_executable(%s main.cpp)
+  add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 
 endif()"
 (project-name)(project-name)(project-name)(project-name))))
