@@ -1,8 +1,8 @@
 ;;; create-basic-cmake-cxx-project.el --- A trivial C++ projects tool
 
-;; Copyright (C) 2019  Ales Cepek <cepek@gnu.org>
+;; Copyright (C) 2019, 2020  Ales Cepek <cepek@gnu.org>
 
-;; Version: 1.00
+;; Version: 1.01
 
 ;; This package is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 
 (defun create-basic-cmake-cxx-project ()
 "Create basic cmake C++ project."
-(defun project-name() 
+(defun project-name()
     (file-name-nondirectory
     (directory-file-name
     (file-name-directory (buffer-file-name)))))
@@ -27,7 +27,7 @@
 
 project(%s LANGUAGES CXX VERSION 1.0)
 
-set(CMAKE_CXX_STANDARDS 11)
+set(CMAKE_CXX_STANDARDS 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
