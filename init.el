@@ -3,14 +3,18 @@
 
 ;; Use CUA mode, turn off if needed from Options menu.
 
-;;;;; (cua-mode t)
+;;; (cua-mode t)
 
 
-;; Show whitespaces and always whitespace-cleanup before save
+;; Show trailing whitespaces and delete before save
 
-(setq-defualt indent-tabs-mode nil)
-(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq-default show-trailing-whitespace t)
+(face trailing)   ;; trailing ws in red
+
+(defun endless/c-hook ()
+  (setq indent-tabs-mode nil))
+(add-hook 'c++-mode-hook #'endless/c-hook)
 
 
 ;; Headers in c++-mode
