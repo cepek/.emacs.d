@@ -3,11 +3,12 @@
 
 ;; Use CUA mode, turn off if needed from Options menu.
 
-(cua-mode t)
+;;;;; (cua-mode t)
 
 
 ;; Show whitespaces and always whitespace-cleanup before save
 
+(setq-defualt indent-tabs-mode nil)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 (setq-default show-trailing-whitespace t)
 
@@ -16,7 +17,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
-(setq-default indent-tabs-mode nil)
 
 ;; Compilation output
 (setq compilation-scroll-output t)
