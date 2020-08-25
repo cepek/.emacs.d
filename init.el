@@ -10,7 +10,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq-default show-trailing-whitespace t)
-(face trailing)   ;; trailing ws in red
+
 
 (defun endless/c-hook ()
   (setq indent-tabs-mode nil))
